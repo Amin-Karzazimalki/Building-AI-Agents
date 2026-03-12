@@ -32,6 +32,14 @@
       border-bottom: 1px solid #334155;
     }
 
+    .logo {
+  width: clamp(8px, 9vw, 30px);
+  border-radius: 50%;
+  border: 2px solid #000000;
+  float: left; /* Ajoute cette ligne pour positionner le logo à gauche */
+  margin-right: 15px; /* Optionnel : ajoute un peu d'espace à droite du logo */
+}
+
     h1 {
       font-size: 3rem;
       margin-bottom: 0.6rem;
@@ -160,6 +168,7 @@
 <body>
 
 <header>
+  <div><img src="logo.jpg" alt="Logo AMIN KARZAZI" class="logo" /></div>
   <h1>Créer des Agents IA</h1>
   <p class="subtitle">Guide ultra-complet et à jour – De zéro à la production en 2025/2026</p>
   <p style="font-size:1.1rem; max-width:700px; margin:1rem auto; color:#fcd34d;">
