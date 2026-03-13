@@ -64,6 +64,67 @@ nav {
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;           /* espace entre logo et menu */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;        /* passe en dessous sur très petit écran */
+}
+
+.nav-logo {
+  width: 48px;            /* taille raisonnable pour nav */
+  height: 48px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: rgba(245, 158, 11, 0.15);
+  padding: 6px;
+  box-shadow: 0 3px 10px rgba(245, 158, 11, 0.2);
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.08);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Sur mobile : logo au centre + menu dessous */
+@media (max-width: 720px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+  
+  .nav-logo {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 0.4rem;
+  }
+  
+  nav ul {
+    gap: 0.7rem;
+  }
+  
+  nav a {
+    padding: 0.7rem 1.1rem;
+    font-size: 0.95rem;
+  }
+}
+
 nav ul {
   list-style: none;
   display: flex;
