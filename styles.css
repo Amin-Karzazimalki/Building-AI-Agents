@@ -65,7 +65,7 @@ nav {
 }
 
 .nav-container {
-  display: flex;
+ /* display: flex; */
  /*  align-items: center; */
  /*  justify-content: center; */
   gap: 1.5rem;           /* espace entre logo et menu */
