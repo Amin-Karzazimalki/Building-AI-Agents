@@ -76,15 +76,12 @@ nav {
 }
 
 .nav-logo {
-  width: 40px;            /* taille raisonnable pour nav */
-  height: 40px;
-  object-fit: contain;
-  border-radius: 12px;
-  background: rgba(245, 158, 11, 0.15);
-  padding: 6px;
-  box-shadow: 0 3px 10px rgba(245, 158, 11, 0.2);
-  flex-shrink: 0;
-  transition: transform 0.25s ease;
+  width: clamp(8px, 9vw, 30px);
+  border-radius: 50%;
+  border: 2px solid #000000;
+  float: left; /* Ajoute cette ligne pour positionner le logo à gauche */
+  margin-right: 15px; /* Optionnel : ajoute un peu d'espace à droite du logo */
+
 }
 
 .nav-logo:hover {
